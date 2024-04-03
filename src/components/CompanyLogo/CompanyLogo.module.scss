@@ -1,0 +1,17 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.companyLogo {
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: 64px;
+
+  &_version {
+    margin-bottom: 6px;
+    margin-left: 4px;
+    
+    color: #838383;
+    line-height: 15px;
+    @include font-regular(10px);
+  }
+}
