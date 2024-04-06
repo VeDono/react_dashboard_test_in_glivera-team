@@ -1,13 +1,11 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 import styles from './SideMenuCategory.module.scss';
 
-import keyIcon from '../../images/icons/key-square.svg';
+interface Props {
+  children: ReactNode;
+}
 
-export const SideMenuCategory: FC = () => {
-  return (
-    <article className={styles.sideMenuCategory}>
-      <img src={keyIcon} alt="keyIcon" />
-    </article>
-  );
+export const SideMenuCategory: FC<Props> = ({ children }) => {
+  return <article className={styles.sideMenuCategory}>{children}</article>;
 };

@@ -1,0 +1,34 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.sideMenuElement {
+  &_leftIcon {
+    height: 24px;
+    width: 24px;
+    margin-left: 11px;
+
+    > * {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &_title {
+    color: #9197B3;
+    @include font-regular(14px);
+    letter-spacing: -1%;
+    line-height: 21px;
+    transition: color 0.3s ease-in-out;
+    margin-left: 14px;
+  }
+
+  &_rightIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    position: absolute;
+    right: 0;
+
+    > * {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
