@@ -1,0 +1,30 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.sideMenuUser {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+
+  &_avatarImg {
+    width: 42px;
+    height: 42px;
+  }
+
+  &_userInfo {
+    margin-left: 12px;
+
+    &-name {
+      @include font-regular(14px);
+      color: #000000;
+      line-height: 21px;
+      letter-spacing: 1%;
+    }
+
+    &-position {
+      @include font-regular(12px);
+      line-height: 18px;
+      letter-spacing: 1%;
+      color: #757575;
+    }
+  }
+}
