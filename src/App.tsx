@@ -1,7 +1,7 @@
-import { SideMenu } from './components/SideMenu';
+import { DashboardApp } from './components/DashboardApp';
 
 function App() {
-  return <SideMenu />;
+  return <DashboardApp />;
 }
 
 export default App;

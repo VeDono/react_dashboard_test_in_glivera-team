@@ -1,0 +1,15 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.workRealm {
+  margin-left: 71px;
+  margin-top: 41px;
+  margin-right: 95px;
+  width: 968px;
+
+  &_userName {
+    color: #000;
+    line-height: 36px;
+    margin-bottom: 51px;
+    @include font-regular(24px);
+  }
+}
