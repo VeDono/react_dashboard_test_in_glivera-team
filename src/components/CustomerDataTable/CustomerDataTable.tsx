@@ -3,6 +3,7 @@ import { FC } from 'react';
 import styles from './CustomerDataTable.module.scss';
 
 import searchIcon from '../../images/icons/search-icon.svg';
+import { CustomerTable } from '../CustomerTable';
 
 export const CustomerDataTable: FC = () => {
   return (
@@ -32,6 +33,8 @@ export const CustomerDataTable: FC = () => {
           />
         </div>
       </div>
+
+      <CustomerTable />
     </article>
   );
 };

@@ -1,6 +1,7 @@
 @import '../../styles/mixins/fonts-mixins.scss';
 
 .customerDataTable {
+  position: relative;
   width: 100%;
   height: 812px;
   background-color: #fff;
@@ -13,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   &_titles {
@@ -48,7 +50,9 @@
       border-radius: 10px;
       border: none;
       height: 38px;
+      min-width: 216px;
       padding-left: 40px;
+      margin-right: 10px;
 
       &:focus {
         outline: none;

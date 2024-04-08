@@ -1,0 +1,38 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.customerTable {
+  width: 100%;
+  @include font-medium(14px);
+
+  &_column {
+    text-align: left;
+    color: #B5B7C0;
+
+    &-status {
+      text-align: center;
+      color: #B5B7C0;
+    }
+  }
+
+  &_data {
+    color: #292D32;
+
+    &-status {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &_divider {
+    margin-top: 14px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #EEEEEE;
+      width: 100%;
+      left: 0;
+    }
+  }
+}
