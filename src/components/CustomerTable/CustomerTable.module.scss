@@ -4,6 +4,10 @@
   width: 100%;
   @include font-medium(14px);
 
+  &_body {
+    position: relative;
+  }
+
   &_column {
     text-align: left;
     color: #B5B7C0;
@@ -14,18 +18,9 @@
     }
   }
 
-  &_data {
-    color: #292D32;
-
-    &-status {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
   &_divider {
-    margin-top: 14px;
-    margin-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 20px;
 
     &::after {
       content: "";

@@ -1,0 +1,23 @@
+.tableRow {
+  &_data {
+    color: #292D32;
+
+    &-status {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &_rowDivider{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #EEEEEE;
+      width: 100%;
+      left: 0;
+    }
+  }
+}
