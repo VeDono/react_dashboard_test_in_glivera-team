@@ -4,6 +4,7 @@ import styles from './CustomerDataTable.module.scss';
 
 import searchIcon from '../../images/icons/search-icon.svg';
 import { CustomerTable } from '../CustomerTable';
+import { PaginationButtons } from '../PaginationButtons';
 
 export const CustomerDataTable: FC = () => {
   return (
@@ -35,6 +36,14 @@ export const CustomerDataTable: FC = () => {
       </div>
 
       <CustomerTable />
+
+      <div className={styles.customerDataTable_footer}>
+        <p className={styles['customerDataTable_footer-info']}>
+          Showing data 1 to 8 of 256K entries
+        </p>
+
+        <PaginationButtons />
+      </div>
     </article>
   );
 };

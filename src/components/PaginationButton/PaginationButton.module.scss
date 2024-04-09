@@ -1,0 +1,44 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.paginationButton {
+  border-radius: 4px;
+  border: 1px solid #EEEEEE;
+  background: #F5F5F5;
+  padding: 6px 9px 6px 9px;
+
+  width: 26px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #404B52;
+  @include font-medium(12px);
+  line-height: 12px;
+
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    > * {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    background: #5932EA;
+    border: 1px solid #5932EA;
+    color: #fff;
+
+    svg {
+      > * {
+        stroke: #FFF;
+      }
+    }
+  }
+
+  &--rightGap {
+    margin-right: 12px;
+  }
+}

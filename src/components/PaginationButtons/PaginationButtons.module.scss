@@ -1,0 +1,14 @@
+@import '../../styles/mixins/fonts-mixins.scss';
+
+.paginationButtons {
+  display: flex;
+  align-items: center;
+
+  &_separator {
+    @include font-medium(12px);
+    line-height: 12px;
+    color: #000000;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
