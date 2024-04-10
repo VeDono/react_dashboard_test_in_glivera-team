@@ -6,7 +6,7 @@ import { TableRow } from '../TableRow';
 export const CustomerTable: FC = () => {
   return (
     <table className={styles.customerTable}>
-      <thead>
+      <thead className={styles.customerTable_header}>
         <tr>
           <th className={styles.customerTable_column}>Customer Name</th>
           <th className={styles.customerTable_column}>Company</th>

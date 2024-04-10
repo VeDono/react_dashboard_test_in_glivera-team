@@ -1,3 +1,5 @@
+@import '../../styles/mixins/screen-mixins.scss';
+
 .sideMenu {
   max-width: 306px;
   height: 100%;
@@ -9,5 +11,8 @@
 
   display: flex;
   flex-direction: column;
-  display: none;
+
+  @include media-up-to(1230px) {
+    visibility: hidden;
+  }
 }

@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import cn from 'classnames';
+
 import { CustomerStatus } from '../CustomerStatus';
 
 import styles from './TableRow.module.scss';
@@ -22,7 +24,7 @@ export const TableRow: FC<Props> = ({
 }) => {
   return (
     <>
-      <tr>
+      <tr className={styles.tableRow}>
         <td className={styles.tableRow_data}>{name}</td>
         <td className={styles.tableRow_data}>{company}</td>
         <td className={styles.tableRow_data}>{number}</td>
@@ -30,7 +32,7 @@ export const TableRow: FC<Props> = ({
         <td className={styles.tableRow_data}>{country}</td>
         <td
           aria-label="customer-status"
-          className={styles['tableRow_data-status']}
+          className={cn(styles.tableRow_data, styles['tableRow_data-status'])}
         >
           <CustomerStatus active={status} />
         </td>

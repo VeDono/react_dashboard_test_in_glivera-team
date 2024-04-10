@@ -1,11 +1,28 @@
 @import '../../styles/mixins/fonts-mixins.scss';
+@import '../../styles/mixins/screen-mixins.scss';
 
 .customerTable {
   width: 100%;
   @include font-medium(14px);
 
+  @include media-up-to(870px) {
+    font-size: 12px;
+    display: block;
+
+    &_header {
+      display: none;
+    }
+  }
+
   &_body {
     position: relative;
+
+    @include media-up-to(870px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &_column {

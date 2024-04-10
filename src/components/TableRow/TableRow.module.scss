@@ -1,6 +1,33 @@
+@import '../../styles/mixins/screen-mixins.scss';
+
 .tableRow {
+  @include media-up-to(870px) {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+
+    border-radius: 6px;
+    background-color: #FAFBFF;
+
+    margin-bottom: 20px;
+    padding: 10px 10px 15px 10px;
+  }
+
+  @include media-up-to(490px) {
+    width: 100%;
+  }
+
   &_data {
     color: #292D32;
+
+    @include media-up-to(870px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
 
     &-status {
       display: flex;
