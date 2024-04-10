@@ -24,20 +24,49 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @include media-up-to(430px) {
+      flex-direction: column;
+    }
   }
 
   &_titles {
+    @include media-up-to(430px) {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
     &-title {
       @include font-semibold(22px);
       color: #000;
-      line-height: 33px;
       margin-bottom: 7px;
+
+      @include media-from(500px) {
+        line-height: 33px;
+      }
+
+      @include media-up-to(500px) {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+      @include media-up-to(430px) {
+        font-size: 22px;
+      }
     }
 
     &-subtitle {
       color: #16C098;
       @include font-regular(14px);
       line-height: 21px;
+
+      @include media-up-to(500px) {
+        font-size: 13px;
+      }
+
+      @include media-up-to(430px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -65,6 +94,10 @@
 
       &:focus {
         outline: none;
+      }
+
+      @include media-up-to(500px) {
+        margin-right: 0;
       }
     }
   }

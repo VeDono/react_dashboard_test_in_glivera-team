@@ -15,7 +15,7 @@
   justify-content: center;
 
   @include media-up-to(870px) {
-    width: 100%;
+    width: 100px;
   }
 
   &--inactive {
