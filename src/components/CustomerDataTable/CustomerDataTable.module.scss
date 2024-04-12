@@ -17,6 +17,7 @@
   @include media-up-to(600px) {
     padding: 20px;
     height: auto;
+    overflow: hidden;
   }
 
   &_header {
