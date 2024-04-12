@@ -37,7 +37,9 @@ export const TableRow: FC<Props> = ({
           <CustomerStatus active={status} />
         </td>
       </tr>
-      <div className={styles.tableRow_rowDivider}>{}</div>
+      <tr className={styles.tableRow_rowDivider}>
+        <td className={styles['tableRow_rowDivider-td']}>{}</td>
+      </tr>
     </>
   );
 };

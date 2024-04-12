@@ -15,8 +15,10 @@ export const CustomerTable: FC = () => {
           <th className={styles.customerTable_column}>Country</th>
           <th className={styles['customerTable_column-status']}>Status</th>
         </tr>
+        <tr className={styles.customerTable_divider}>
+          <td className={styles['customerTable_divider-td']}>{}</td>
+        </tr>
       </thead>
-      <div className={styles.customerTable_divider}>{}</div>
       <tbody className={styles.customerTable_body}>
         <TableRow
           name="Jane Cooper"

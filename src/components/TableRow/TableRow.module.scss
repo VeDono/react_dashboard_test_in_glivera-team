@@ -16,6 +16,7 @@
 
   @include media-up-to(490px) {
     width: 100%;
+    overflow: hidden;
   }
 
   &_data {
@@ -36,6 +37,7 @@
   }
 
   &_rowDivider{
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -45,6 +47,10 @@
       border-bottom: 1px solid #EEEEEE;
       width: 100%;
       left: 0;
+    }
+
+    &-td {
+      display: none;
     }
   }
 }

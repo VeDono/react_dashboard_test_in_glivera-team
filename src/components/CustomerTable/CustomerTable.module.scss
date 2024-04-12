@@ -36,6 +36,7 @@
   }
 
   &_divider {
+    display: block;
     padding-top: 14px;
     padding-bottom: 20px;
 
@@ -45,6 +46,10 @@
       border-bottom: 1px solid #EEEEEE;
       width: 100%;
       left: 0;
+    }
+
+    &-td {
+      display: none;
     }
   }
 }
