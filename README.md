@@ -1,10 +1,8 @@
-# Test task in Qencode
+# Test task in Glivera-team
 
 ## Description
 
-This is the frontend part of a login interface. The application allows users to try login and restore work account.
-
-Please pay attention what the back-end part of the application not developed by me, and you can't to crate new account, that will be able in other project with my DB and back-end side of application. 👀
+This is the frontend part of CRM Dashboard. The application allows users to see a front-end demo of CRM.
 
 ## Technologies
 
@@ -15,7 +13,7 @@ The project is written in React and TypeScript with some libs.
 To install the project, follow these steps:
 
 1. Clone the repository:
- - git clone https://github.com/VeDono/react_login_interface_front-end.git
+ - git clone https://github.com/VeDono/react_dashboard_test_in_glivera-team.git
 
 2. Install the dependencies:
  - npm install
@@ -25,7 +23,7 @@ To install the project, follow these steps:
 
 ## Usage
 
-After starting the application, you can try to login or restore existing account.
+After starting the application, you can see a front-end demo of CRM.
 
 ## My contacts
 
