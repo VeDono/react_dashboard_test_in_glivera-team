@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import userAvatar from '../../images/userAvatar/userAvatar.png';
+import userAvatar from '../../../images/userAvatar/userAvatar.png';
 
 import styles from './SideMenuUser.module.scss';
 

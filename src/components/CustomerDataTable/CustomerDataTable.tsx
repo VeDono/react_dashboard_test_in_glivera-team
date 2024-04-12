@@ -4,7 +4,7 @@ import styles from './CustomerDataTable.module.scss';
 
 import searchIcon from '../../images/icons/search-icon.svg';
 import { CustomerTable } from '../CustomerTable';
-import { PaginationButtons } from '../PaginationButtons';
+import { PaginationButtons } from '../TableRow/PaginationButtons';
 
 export const CustomerDataTable: FC = () => {
   return (

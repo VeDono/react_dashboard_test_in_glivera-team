@@ -4,8 +4,8 @@ import cn from 'classnames';
 import { CompanyLogo } from '../CompanyLogo';
 
 import styles from './SideMenu.module.scss';
-import { SideMenuList } from '../SideMenuList';
-import { SideMenuUser } from '../SideMenuUser';
+import { SideMenuList } from './SideMenuList';
+import { SideMenuUser } from './SideMenuUser';
 // eslint-disable-next-line max-len
 import { ReactComponent as RightArrowIcon } from '../../images/icons/chevron-right-dark.svg';
 

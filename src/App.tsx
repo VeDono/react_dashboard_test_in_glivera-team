@@ -1,7 +1,14 @@
-import { DashboardApp } from './components/DashboardApp';
+import { SideMenu } from './components/SideMenu';
+import { WorkRealm } from './components/WorkRealm';
 
 function App() {
-  return <DashboardApp />;
+  return (
+    <section className="dashboardApp">
+      <SideMenu />
+
+      <WorkRealm />
+    </section>
+  );
 }
 
 export default App;

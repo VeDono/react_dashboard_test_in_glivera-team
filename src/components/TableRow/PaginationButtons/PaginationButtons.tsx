@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import styles from './PaginationButtons.module.scss';
 
-import { ReactComponent as BackwardIcon } from '../../images/icons/backward-icon.svg';
-import { ReactComponent as FordwardIcon } from '../../images/icons/forward-icon.svg';
-import { PaginationButton } from '../PaginationButton/PaginationButton';
+import { ReactComponent as BackwardIcon } from '../../../images/icons/backward-icon.svg';
+import { ReactComponent as FordwardIcon } from '../../../images/icons/forward-icon.svg';
+import { PaginationButton } from '../PaginationButton';
 
 export const PaginationButtons: FC = () => {
   return (
